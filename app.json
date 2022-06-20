@@ -1,0 +1,22 @@
+{
+  "name": "GeekTG",
+  "description": "GeekTG description",
+  "repository": "https://github.com/alimkimbek/Friendly-Telegram",
+  "success_url": "https://t.me/SJ_Lynx",
+  "website": "https://github.com/alimkimbek/Friendly-Telegram",
+  "env": {
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
