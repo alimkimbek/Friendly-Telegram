@@ -1,0 +1,16 @@
+{
+  "name": "GeekTG FTG Mod",
+  "description": "A telegram userbot",
+  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+}
